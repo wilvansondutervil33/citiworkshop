@@ -5,7 +5,7 @@ class TicketBase(BaseModel):
     description: str
     status:str
     priority: str
-    assigned_to_id 
+    assigned_to_id:int | None = Field(default=None) 
     created_by_id: int
     location_id:int
     

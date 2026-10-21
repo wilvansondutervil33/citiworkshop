@@ -2,7 +2,7 @@ from pydantic import BaseModel, ConfigDict, Field
 
 class SeatBase(BaseModel):
     floor_id: int
-    seat_type:str
+    seat_type:int
 
 class SeatCreate(SeatBase):
     pass
